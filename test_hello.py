@@ -8,3 +8,4 @@ def test_print_hello(capsys):
     captured = capsys.readouterr()
     assert captured.out.strip() == "Hello, World!"
 
+
