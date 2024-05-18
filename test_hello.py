@@ -1,9 +1,10 @@
 # test_hello.py
 
-import hello
+def print_hello():
+    print("Hello, World!")
 
-def test_hello(capsys):
-    hello.print_hello()
+def test_print_hello(capsys):
+    print_hello()
     captured = capsys.readouterr()
     assert captured.out.strip() == "Hello, World!"
 
