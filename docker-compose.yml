@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  ruby:
+    build: .
+    command: rackup -o 0.0.0.0 -p 3000 config.ru
+    volumes:
+      - .:/app
+    ports:
+      - "3030:3000"
+    restart: always
