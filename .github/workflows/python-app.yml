@@ -37,3 +37,5 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Python Style Checker
+      uses: andymckay/pycodestyle-action@0.1.3
